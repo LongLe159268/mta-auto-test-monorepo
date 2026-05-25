@@ -44,11 +44,11 @@ test.describe("MTA Swantech Tests", () => {
 
     await page.locator(".ant-select-selector").nth(1).click();
     //const tree = page.locator('.ant-select-tree').nth(0);
-    // scroll thẳng xuống dưới cùng
+    //scroll thẳng xuống dưới cùng
     //await tree.evaluate(el => el.scrollTop = el.scrollHeight);
-    // // scroll xuống từ từ 
+    //scroll xuống từ từ 
     //await tree.evaluate(el => el.scrollTop += 600);
-    // scroll xuống dùng con lăn
+    //scroll xuống dùng con lăn
     //await page.mouse.wheel(0, 600); // dùng cho toàn page
 
     // scroll trong thẻ select-tree

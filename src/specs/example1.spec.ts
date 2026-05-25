@@ -70,7 +70,7 @@ test.describe("MTA Swantech Tests", () => {
     await page.locator("td svg").first().click();
     // cách lấy icon thứ 2
     // await page.locator("td.ant-table-cell-fix-right").locator("svg").nth(1).click();
-    // // cách lấy icon thứ 3
+    // cách lấy icon thứ 3
     // await page.locator("td.ant-table-cell-fix-right").locator("svg").nth(2).click();
   });
 });
