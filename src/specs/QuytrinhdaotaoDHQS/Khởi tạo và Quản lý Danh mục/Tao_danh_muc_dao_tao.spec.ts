@@ -70,6 +70,7 @@ test.describe("Tạo danh mục đào tạo", () => {
 
   test("Tạo loại hình đào tạo", async ({ page }) => {
     await page.getByText("Danh mục").hover({ force: true });
+    await page.waitForLoadState("networkidle");
     await page.getByText("Đào tạo", { exact: true }).hover();
     await page.getByRole("link", { name: "Loại hình đào tạo" }).click();
 
@@ -85,8 +86,9 @@ test.describe("Tạo danh mục đào tạo", () => {
 
   test("Tạo thời gian đào tạo", async ({ page }) => {
     await page.getByText("Danh mục").hover({ force: true });
+    await page.waitForLoadState("networkidle");
     await page.getByText("Đào tạo", { exact: true }).hover();
-    await page.getByRole("link", { name: "Thời gian đào tạo" }).click();
+    await page.getByRole("link", {  name: "Thời gian đào tạo", exact: true }).click();
 
     // Nhấn nút thêm mới
     await page.getByRole("button", { name: "Thêm mới" }).click();
